@@ -1,0 +1,47 @@
+COMPLETE DEPLOYMENT INSTRUCTIONS FOR YOUR PORTFOLIO
+
+1. CREATE A FIREBASE PROJECT:
+   - Go to https://console.firebase.google.com/
+   - Click "Add project" 
+   - Enter project name (e.g., "my-portfolio-2026")
+   - Click "Continue" through the setup screens
+   - Skip Google Analytics if you prefer
+   - Click "Create project"
+   - Wait for project creation to complete
+
+2. GET YOUR PROJECT ID:
+   - In Firebase Console, click the gear icon next to "Project Overview"
+   - Click "Project settings"
+   - Find your "Project ID" (something like "my-portfolio-2026-abcd1")
+
+3. CONFIGURE LOCAL PROJECT:
+   Open a new terminal/command prompt and run these commands:
+
+   cd "C:\Users\PC\Desktop\freefolio-main\freefolio-main"
+   firebase use --add
+   # When prompted for alias, type: default
+   # When prompted for project, enter your project ID from step 2
+
+4. DEPLOY YOUR SITE:
+   firebase deploy --only hosting
+
+5. ACCESS YOUR LIVE SITE:
+   After successful deployment, you'll see a URL like:
+   https://YOUR-PROJECT-ID.web.app
+
+   This is your publicly accessible portfolio URL!
+
+ALTERNATIVE: NETLIFY DEPLOYMENT (NO AUTHENTICATION REQUIRED)
+
+If Firebase proves difficult, you can deploy to Netlify:
+
+1. Go to netlify.com and create a free account
+2. Drag and drop the entire "freefolio-main" folder to Netlify
+3. Netlify will automatically deploy and give you a URL
+
+CUSTOMIZATION BEFORE DEPLOYMENT:
+
+Before deploying, consider editing:
+- aurora/index.html - Update personal information (name, bio, skills, etc.)
+- Replace placeholder content with your actual information
+- Update social media links and contact information
