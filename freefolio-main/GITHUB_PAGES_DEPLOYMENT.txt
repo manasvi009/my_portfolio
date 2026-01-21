@@ -1,0 +1,60 @@
+# COMPLETE GITHUB PAGES DEPLOYMENT INSTRUCTIONS
+
+## STEP 1: CREATE GITHUB ACCOUNT AND REPOSITORY
+
+1. Go to https://github.com and create a free account (if you don't have one)
+2. Click the "+" icon in the top right corner
+3. Select "New repository"
+4. Repository name: Use your username for a personal site (e.g., "johnsmith.github.io") 
+   OR any name for a project site (e.g., "my-portfolio")
+5. Set to "Public" 
+6. DO NOT initialize with README, .gitignore, or license (we already have these)
+7. Click "Create repository"
+
+## STEP 2: CONNECT YOUR LOCAL REPOSITORY
+
+After creating the repository, GitHub will show you commands. Copy the HTTPS URL (looks like https://github.com/username/repository-name.git)
+
+Then run these commands in your terminal:
+
+```bash
+git remote add origin YOUR_GITHUB_URL_HERE
+git branch -M main
+git push -u origin main
+```
+
+## STEP 3: ENABLE GITHUB PAGES
+
+1. Go to your repository on GitHub
+2. Click "Settings" tab
+3. Scroll down to "Pages" section in the left sidebar
+4. Under "Source", select "Deploy from a branch"
+5. Select "main" branch
+6. Select "/ (root)" as folder
+7. Click "Save"
+
+## STEP 4: ACCESS YOUR LIVE SITE
+
+After a few minutes, your site will be available at:
+- Personal site: https://USERNAME.github.io
+- Project site: https://USERNAME.github.io/REPOSITORY-NAME
+
+## IMPORTANT NOTES:
+
+- For a personal site, your repository MUST be named USERNAME.github.io
+- For a project site, any name works
+- Changes pushed to GitHub will automatically update your live site
+- Your portfolio will be accessible at the GitHub Pages URL
+
+## TROUBLESHOOTING:
+
+If you get authentication errors:
+1. Generate a personal access token in GitHub settings
+2. Use it instead of password when pushing
+
+If your site doesn't appear:
+1. Check that you pushed to the correct branch (main)
+2. Verify GitHub Pages is enabled in repository settings
+3. Wait 5-10 minutes for initial deployment
+
+Your site is now ready for deployment once you complete these steps!
