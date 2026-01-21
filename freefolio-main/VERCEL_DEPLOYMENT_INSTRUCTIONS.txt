@@ -1,0 +1,32 @@
+# VERCEL DEPLOYMENT INSTRUCTIONS
+
+1. In your terminal, you should see a message like:
+   "Visit https://vercel.com/oauth/device?user_code=XXXX-XXXX"
+   "Press [ENTER] to open the browser"
+
+2. Press the ENTER key in your terminal
+
+3. This will open a browser window asking you to sign in to Vercel
+
+4. You can either:
+   - Sign in with your existing GitHub, GitLab, or Google account
+   - Create a new Vercel account
+
+5. After signing in, Vercel will link your account to the CLI
+
+6. Once authenticated, run this command to deploy:
+   vercel --cwd "c:\Users\PC\Desktop\freefolio-main\freefolio-main" --yes --public
+
+7. After deployment completes, you'll receive a URL like:
+   https://freefolio-project.vercel.app (or similar)
+
+8. This is your publicly accessible portfolio website!
+
+BENEFITS OF USING VERCEL:
+- Free tier with generous limits
+- Automatic SSL certificates
+- Global CDN for fast loading
+- Easy custom domain setup later
+- Great for static sites like yours
+
+NOTE: Your site is already properly configured for deployment. The only thing needed is authentication.
